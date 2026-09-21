@@ -1,0 +1,18 @@
+{
+  "name": "kerf",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Conceptual integrity, code as a byproduct.",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "bin": { "kerf": "src/cli.mjs" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "install:local": "node scripts/install-local.mjs",
+    "smoke:installed": "node scripts/installed-smoke.mjs"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3",
+    "yaml": "^2.8.2"
+  }
+}
